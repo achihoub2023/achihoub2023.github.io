@@ -45,6 +45,18 @@
       .content {padding-top:0.3em;}
     }
 
+    h1{
+        text-align: center;
+    }
+
+    .about-border {
+        display: block;
+        width: 900px;
+        height: 3px;
+        background: #3366CC;
+        margin: 20px auto;
+    }
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -75,7 +87,7 @@
     }
 
     .active {
-      background-color: #BEBFBE;
+      background-color: #000000;
     }
  </style>
  </head>
@@ -86,13 +98,10 @@
   <li><a class="active" href="https://achihoub2023.github.io/Resume.html">Resume</a></li>
 </ul>
 
-<body>    
-     <div>
-        <h1> Resume</h1>
-        <p>
-            Coming soon
-        </p>
-      </div>
-    
-</body>
+    <body>  
+        <div class="layout">
+            <h1 itemprop="name">Resume</h1>
+            <div class="about-border"></div>
+        </div>
+    </body>
 </html>

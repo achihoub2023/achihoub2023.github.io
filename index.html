@@ -37,15 +37,6 @@
     .content {
       padding: 0.67em 1em 6em 1em;
     }
-    li {
-      margin-bottom: 0.33em;
-    }
-    h2 {
-      margin-top: 1.5em;
-    }
-    .pub li{
-      margin-bottom: 0.6em;
-    }
     .print-header{
       display:none;
     }
@@ -53,12 +44,39 @@
       h1.picture{ display:none;}
       .content {padding-top:0.3em;}
     }
- ul {
-  position: fixed;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
- }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
  </style>
  </head>
  <ul>

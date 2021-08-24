@@ -18,7 +18,13 @@
       color: #333;
       line-height: 1.39;
     }
-
+    a, a:hover{
+      color: #3366CC;
+      text-decoration: none;
+    }
+    a:hover{
+      border-bottom: 1px dashed #3366CC;
+    }
     .layout{
       margin-left: auto;
       margin-right: auto;
@@ -31,6 +37,15 @@
     .content {
       padding: 0.67em 1em 6em 1em;
     }
+    li {
+      margin-bottom: 0.33em;
+    }
+    h2 {
+      margin-top: 1.5em;
+    }
+    .pub li{
+      margin-bottom: 0.6em;
+    }
     .print-header{
       display:none;
     }
@@ -38,33 +53,29 @@
       h1.picture{ display:none;}
       .content {padding-top:0.3em;}
     }
-   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
 
-    background-color: #333;
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
   </style>
 </head>
-
 <ul>
   <li><a class="active" href="https://achihoub2023.github.io/">Home</a></li>
   <li><a href="https://achihoub2023.github.io/Experience.html">Experience</a></li>
@@ -85,7 +96,6 @@
         <h1 class="picture"><img alt="Anis Chihoub" class="pure-img" src="static/me.jpg" itemprop="image" /></h1>
       </div>
     </div>
-=
-
+   
 </body>
 </html>

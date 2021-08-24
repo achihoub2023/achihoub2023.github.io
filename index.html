@@ -53,25 +53,47 @@
       h1.picture{ display:none;}
       .content {padding-top:0.3em;}
     }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
   </style>
 </head>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="https://achihoub2023.github.io">Homepage</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li>
-              <a class="nav-link" href="Experience.html">Experience</a>
-            </li>
-            <li>
-              <a class="nav-link" href="Awards.html">Awards</a>
-            </li>
-            </ul>
-        </div>
-</nav>  
+<ul>
+  <li><a class="active" href="https://achihoub2023.github.io/">Home</a></li>
+  <li><a href="https://achihoub2023.github.io/Experience.html">Experience</a></li>
+  <li><a href="https://achihoub2023.github.io/Projects.html">Projects</a></li>
+  <li style="float:right"><a href="https://achihoub2023.github.io/Resume.html">Resume</a></li>
+</ul>
   
 <body>
   <div class="layout">

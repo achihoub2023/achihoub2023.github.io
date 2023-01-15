@@ -48,7 +48,7 @@ body {
     padding: 0;
     margin: 0;
   }
-  .nav li {
+  .nav .home,.experience,.projects,.teaching {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
     line-height: 40px;
@@ -72,9 +72,11 @@ body {
     color: #444;
     cursor: default;
   }
+
+ 
    
   @media screen and (min-width: 600px) {
-    .nav li {
+    .nav .home,.experience,.projects,.teaching{
       width: 120px;
       border-bottom: none;
       height: 50px;
@@ -89,26 +91,46 @@ body {
     }
     */
 
-    .nav li {
-      float: left;
+    .nav .home,.experience,.projects,.teaching {
+      display: inline-block;
+      margin-right: -4px;
     }
-    .nav ul {
+    .nav .bar {
       overflow: auto;
       width: 600px;
       margin: 0 auto;
     }
     .nav {
       background-color: #444;
+      display: flex;
     }
     
+    /* .dropdown-1 > li a {
+      color: white;
+    }
+    
+   
+    .dropdown-1 {
+      position: absolute;
+      display: none;
+      background-color: var(--dropdown);
+      padding: 0;
+      
+    }
+    
+    .menu-1:hover .dropdown-1 {
+      display: block;
+    }
+    
+    .dropdown-1 li {
+      border-bottom: 1px dotted white;
+      width: 120px;
+    }
+    
+    .dropdown-1 li:last-child {
+      border: none;
+    } */
 
-    /*
-            a, a:hover{
-      color: #3366CC;
-      text-decoration: none;
-    }
-    a:hover{
-      border-bottom: 1px dashed #3366CC;
-    }
-    */
   }
+
+
